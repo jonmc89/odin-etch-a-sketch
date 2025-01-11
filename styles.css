@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid_square {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.grid_square_hovered {
+  background-color: #000;
+}
+
+.clear_button {
+  width: 150px;
+  height: 100px;
+  margin-top: 20px;
+}

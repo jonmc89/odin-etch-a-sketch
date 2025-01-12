@@ -9,6 +9,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f77d7d;
 }
 
 body {
@@ -16,29 +17,130 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-  width: 600px;
-  height: 600px;
+  width: auto;
+  height: auto;
+  max-width: 600px;
+  max-height: 600px;
   background-color: black;
   display: flex;
   flex-wrap: wrap;
 }
 
+.title{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.instructions{
+  margin-bottom: 20px;
+}
+
+.number_of_square{
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 3cap;
+}
+
+.number_of_square:hover{
+  background-color: #000;
+  color: #fff;
+}
+
 .grid_square {
-  background-color: #fff;
-  width: 20px;
-  height: 20px;
+  background-color: #d4d4d4;
   border: 1px solid black;
 }
 
+.grid_square_black {
+  background-color: #d4d4d4;
+}
+
+.grid_square_blue {
+  background-color: #0000ff;
+}
+
+.grid_square_yellow {
+  background-color: #ffff00;
+}
+
+.grid_square_red {
+  background-color: #ff0000;
+}
+
+.grid_square_purple {
+  background-color: #800080;
+}
+
 .grid_square_hovered {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent to overlay the base color */
+}
+
+.grid_square:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent to overlay the base color */
+}
+
+.colours_div {
+  text-align: center;
+}
+
+.colours_div h3{
+  margin-bottom: 20px;
+}
+
+.colour_select{
+  margin-bottom: 20px;
+}
+
+.button_grey {
+  background-color: #d4d4d4;
+  border-color: #d4d4d4;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button_blue {
+  background-color: #0000ff;
+  border-color: #0000ff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button_yellow {
+  background-color: #ffff00;
+  border-color: #ffff00;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button_red {
+  background-color: #ff0000;
+  color: #fff;
+  border-color: #ff0000;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button_purple {
+  background-color: #800080;
+  color: #fff;
+  border-color: #800080;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .clear_button {
-  width: 150px;
-  height: 100px;
   margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.clear_button:hover{
+  background-color: #000;
+  color: #fff;
 }
